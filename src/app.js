@@ -24,16 +24,21 @@ hbs.registerPartials(partialsDirectory)
 
 app.use(express.static(publicDirectoryPath))
 
-
+// const middle=(req,res,next)=>{
+//     console.log("hello");               //MIddleware
+//     res.send("NOT wokring")
+//     next();
+// }
 app.get('/',(req,res)=>{
 res.render('index',{
     title:"Weather-App"
 })
 })
 
-app.get('/about',(req,res)=>{
+// app.get('/about',middle,(req,res)=>{
+    app.get('/about',(req,res)=>{
     res.render('About',{
-        title:"About this website"
+        title:"About this website designer"
     })
 })
 
@@ -42,7 +47,7 @@ app.get('/help',(req,res)=>{
         title:"Send us any kind of doubt or suggestion"
     })
 })
-
+  
 app.get('/login',(req,res)=>{
         res.render('Login',{
             title:"Login Page"

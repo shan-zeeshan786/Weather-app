@@ -1,19 +1,39 @@
-
-#header{
- background-color: skyblue;
- border-radius: 5px;
- border:solid black;
- box-shadow: 5px 5px 5px gray;
- display: flex;
- padding: 20px 20px 20px 20px;
- margin-bottom: 20px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+#header{
+ background-color: black;
+ display: flex;
+}
+h1{
+    text-shadow: 2px 2px 2px 2px whitesmoke;
+    margin-left: 20px;
+    
+}
+h1 a{
+    color: white;
+    text-decoration: none;
+}
+
 .title-name{
-    color: rosybrown;
+    display: flex;
+    align-items: center;
+    color: rgb(231, 207, 207);
     text-decoration: solid black;
+     
+}
+.title-name>h1>a{
+    text-shadow: 30px 4px 5px 6px wheat;
 }
 .title{
     margin: 20px 2px 20px  auto;
+}
+h2 >a{
+    
+    color: white;
+    text-decoration: none;
 }
 .working{
     border:solid red ;

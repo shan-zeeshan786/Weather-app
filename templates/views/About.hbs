@@ -4,10 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link rel="stylesheet" href="/css/about.css">
     <title>About</title>
 </head>
 <body>
        {{>header}}
-     <h1>{{title}}</h1>
+     {{!-- <h1>{{title}}</h1> --}}
+      <div class="middle-container">
+        <div class="profile">
+          <img class="me"src="/image/md.jpg" alt="shan-image">
+          <h2>Hello!</h2>
+          <h4>My Name is Md ZEESHAN ALAM</h4>
+          <br>
+          <p class="disp">I am  a  Electrical engineering student of Jamia Millia 
+            ISLAMIA
+          </p>
+          <p>I am a budding engineer, working hard to pursue my dreams</p>
+        </div>
+        <br>
+        <hr>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            {{!-- <img class=" skill-img" src="image/computer.png" alt=""> --}}
+           
+            <p class="skill-1">I am an Electrical engineering student at JAMIA MILLIA ISLAMIA, NEW DELHI. I'm learning web
+               development and practising DSA(Data structure and Algo.) and i'm also interested  
+               in learning different tools and technologies.</p>
+               <br>
+           <h3 class="skill-1">Design and Development</h3>
+               <p>I have created this website to get the temperature of any location easily. I have created
+                this using HTML,CSS,JavaScript for frontend part and Node.js for backend. I'm getting all data by
+                using Weather API.         
+               </p>
+          </div>
+          {{!-- <div class="skill-row">
+            <img class="chilli" src="image/chillies.png" alt="chilli">
+            <h3  class="skill-2">HOT wings challenge</h3>
+            <p class="skill-2">I really love HOT wings. I can give challenge to anyone to beat me on eating hot wings.</p>
+          </div> --}}
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          {{!-- <h3 class="hot-wings">If you love hot wings as much as I do</h3>
+          <p >Love hot wings as much as I do? Let's talk about how awesome they are! <br> We can code while we eat hot wings 
+          </p> --}}
+          <a class="btn" href="./help">CONTACT ME</a>
+        </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+       <h4>
+        <a class="footer-link" href="https://www.linkedin.com/md-z-alam">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/">Twitter</a>
+        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+        <br></h4>
+        <br>
+        <br>
+        <p>© 2018 MD ZEESHAN ALAM.</p>
+      </div>
 
 </html>
